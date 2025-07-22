@@ -3,7 +3,7 @@
 # The actual installation of the autoware.auto packages should be done in autoware.ai
 ARG DOCKER_ORG=usdotfhwastoldev
 ARG DOCKER_TAG=develop-humble
-FROM ${DOCKER_ORG}/carma-base:${DOCKER_TAG} as base_image
+FROM ${DOCKER_ORG}/carma-test:${DOCKER_TAG} as base_image
 
 FROM base_image as build
 ARG GIT_BRANCH=develop
